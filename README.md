@@ -1,4 +1,4 @@
-bada0020.github.io
+Dima Badawi
 ==================
 
 graphic design portfolio
