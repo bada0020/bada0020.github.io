@@ -32,32 +32,38 @@ h1 {
 }
 
 
-/* Social Icons ------------------------------------------------------------*/
-
-
-.social-bar{
-margin-left: 30em;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
 
 /* FOOTER ------------------------------------------------------------*/
 
 .site-footer {
-	float:left;
-	margin: 1em 55em 1em 1em;
-	width: 35%;
+	width:100%;
+	clear:both;
+	overflow:hidden;
+
 	box-sizing:border-box;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
+.copyright{
+	float:left;
+}
+
+.social-bar{
+	float:right;
+}
+
+.site-footer a{
+	display:inline;
+	border: 0;
+	margin:auto;
+	
+}
 @media only screen and (min-width: 20em) {
 	
-	.logo{
-		width: 10%;
+
+
+	
+	
 }
 }
 
