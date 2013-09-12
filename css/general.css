@@ -58,18 +58,25 @@ h1 {
 	margin:auto;
 	
 }
-@media only screen and (min-width: 20em) {
+
+@media only screen and (min-width:20em) {
 	
 
-
-	
-	
+.main-wrapper {
+	margin: 1em 0;
+	box-sizing:border-box;
 }
+
+
+h1 {
+	margin: 1em 0;
 }
 
+.social-bar{
+	float: right;
+}
 
-
-
+}
 
 
 
