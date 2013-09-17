@@ -26,8 +26,8 @@ h1 {
 
 .main-wrapper {
 	float: left;
-	margin: 1em 55em 1em 2.5em;
-	width: 30%;
+	margin: 1em 0em 1em 2.5em;
+	width: 250px;
 	box-sizing:border-box;
 }
 
@@ -39,6 +39,8 @@ h1 {
 	width:100%;
 	clear:both;
 	overflow:hidden;
+	background-color: black;
+
 
 	box-sizing:border-box;
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
@@ -52,13 +54,9 @@ h1 {
 	float:right;
 }
 
-.site-footer a{
-	display:inline;
-	border: 0;
-	margin:auto;
-	
-}
 
+
+/*
 @media only screen and (min-width:20em) {
 	
 
@@ -77,6 +75,7 @@ h1 {
 }
 
 }
+*/
 
 
 
