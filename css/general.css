@@ -1,0 +1,469 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+
+body {
+	background-image:url(../images/bulb.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'Roboto Condensed', sans-serif, cursive;
+	line-height: 1.5rem;
+	font-size: 100%;
+	background-color: #000;
+}
+
+p {
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+
+
+img {
+	width: 100%;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+
+/* --------------- MASTHEAD */
+
+
+.masthead {
+	height: 4.5rem;
+	position: fixed;
+	width: 100%;
+	z-index: 100; /* Puts this emlement on top of the rest */
+	text-transform: uppercase;
+}
+
+.logo {
+	width: 7rem;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	z-index: 100;
+	margin-top: 4px;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+bottom: 0;
+height: 40px;
+overflow: hidden;
+position: absolute;
+right: 10px;
+width: 46px;
+
+background: transparent url("../img/icon-nav.svg") no-repeat 0 0;
+
+text-indent: 100%;
+white-space: nowrap;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+background-color: #000;
+background-position: 0 -40px;
+}
+
+.nav {
+background-color: #000;
+}
+
+.nav > ul {
+margin: 0;
+padding: 0.8em 0;
+
+list-style-type: none;
+font-size: 1.25em;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+display: block;
+padding: 0.5em 10px;
+
+color: #e2e2e2;
+text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+background-color: #222;
+
+color: #fff;
+}
+
+.nav-bottom {
+margin-top: 1.5em;
+}
+
+@media only screen and (min-width: 20em) {
+
+	.nav li {
+		float: left;
+		width: 50%;
+	}
+
+}
+
+@media only screen and (min-width: 30em) {
+
+	.nav {
+		text-align: center;
+	}
+
+	.nav li {
+		display: inline-block;
+		float: none;
+		margin: 0 0.5rem;
+		width: auto;
+	}
+
+	.nav-btn {
+		display: none;
+	}
+
+	.nav-top {
+		max-height: 5rem;
+	}
+
+}
+
+@media only screen and (min-width: 45em) {
+
+	.nav-top {
+		float: right;
+	}
+
+	.masthead-top {
+		float: left;
+	}
+
+}
+
+/*
+nav {
+	width: 100%;
+	height: 5rem;
+	position:absolute;
+	top: 1.5rem;
+	background-color: #BE1E2D;
+}
+
+nav ul {
+	text-align: center;	
+	padding-left: 3%;
+}
+
+nav li {
+	display: inline;	
+}
+
+nav a {
+	display: inline-block;
+	margin: 0 1%;
+	padding: 1rem 0;
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+.about {
+	margin-right: 10%;
+}
+
+.baseline {
+	
+}
+
+*/
+@media only screen and (min-width: 35em) {
+
+	.artwork li {
+		width: 20%;
+	}
+
+}
+
+
+/* ------------- Content */
+
+.wrapper {
+	overflow: hidden; 
+	padding-top: 4.5rem;
+}
+
+#home,
+#aboutme,
+#portfolio,
+#contact {
+	clear: both;   
+	overflow: hidden;
+
+}
+
+
+
+/*------------- Home Page */
+
+#home {
+	height: 40rem;
+}
+
+.qoute {
+	margin: 10rem 1rem 1rem 1rem;
+	font-family: Roboto Condensed, sans-serif, cursive; 
+	line-height: 1.8rem;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+h2 + p {
+	color: #FFF;
+	text-align: left;
+	width: 40%;
+	margin-left: 10%;
+	margin-right: 5%;
+	text-transform: uppercase;
+}
+
+
+
+/*------------------------------------------------------------------- About */
+
+
+
+#aboutme {
+	background-color: #FFF;
+	padding: 3% 3%;
+	margin-top: 10rem;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-align:center;
+	font-family: Roboto Condensed, sans-serif, cursive;
+	margin-top: 4.2rem; 
+	text-transform: uppercase;
+}
+
+h1 + hr {
+	margin: 0;
+	border: 0;
+	margin-bottom: 2.4rem;
+	border-bottom: 2px solid #000;
+}
+
+/*
+#aboutme img {
+	width: 30%;
+	background-color: #666;
+	margin-right: 5%;
+	float: left;
+	margin-bottom: 2rem;
+} */
+
+
+
+
+/*------------------------------------------------------------------- Portfolio */
+
+#portfolio {
+	background-color: #FFF;
+	padding: 6rem 10.75%;
+}
+
+.artwork {
+	margin-right: 4%;
+	float:left;
+	margin-bottom: 3.5rem;
+}
+
+.artwork:nth-child(3n+3) { /* Every 3rd div will have these proprties */ 
+	margin-right: 0;
+}
+	
+
+h4 {
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+h3 + hr {
+	margin: 0;
+	border: 0;
+	margin-bottom: 2.4rem;
+	border-bottom: 2px solid #000;
+}
+
+h3 {
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align:center;
+	font-family: Roboto Condensed, sans-serif, cursive;
+	text-transform: uppercase;
+}
+
+.artwork p {
+	font-size: 0.9rem;
+}
+
+/*----------------- Contact */
+
+#contact {
+	background-color: #FFCCCC; 	
+}
+
+
+#contact p {
+	text-align: center;
+}
+
+.socialmedia {
+	width: 200px;
+	position: absolute;
+}
+
+.socialmedia li {	
+	display:inline;
+}
+
+.socialmedia img {
+	width: 3rem;
+	margin-right: 0.5rem;
+}
+
+
+
+/* ----------- Footer */
+
+
+.bottom {
+	background-color: #000;
+	text-align: center;
+}
+
+.bottom a {
+	color: #FFF;
+	text-decoration: none;
+}	
+
+/*------------ MEDIA */
+
+@media only screen and (min-width:30em) {
+	
+
+.qoute {
+	font-size: 2rem;
+	margin-top: 13rem;
+	margin-bottom: 1rem;
+	margin-left: 17%;
+	text-align: centre;
+
+	line-height: 2rem;
+}
+
+.socialmedia
+
+
+}
+
+@media only screen and (min-width:45em) {
+	
+
+
+.qoute {
+	font-size: 3rem;
+	margin-top: 10rem;
+	margin-bottom: 1rem;
+	margin-left: 25%;
+
+	line-height: 2.8rem;
+
+}
+
+#aboutme {
+	padding-right: 1%;
+}
+
+p {
+	margin-bottom: 1.5rem;
+
+	line-height: 1.5rem;
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+
+
+}
+
+/*------------ Lede */
+
+
+@media only screen and (min-width: 20em) {
+
+	.lede{
+	font-size: 0.6rem%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 45em) {
+
+	.lede {
+		font-size: 1.125rem;
+	}
+
+}
+
+
+@media only screen and (min-width: 100em) {
+
+	.lede{
+	font-size: 150%;
+}
+
+}
+
+@media only screen and (min-width: 200em) {
+
+	.lede{
+	font-size: 1.125rem;
+}
+
+}
+
+@media only screen and (min-width: 250em) {
+
+	.lede{
+	font-size: 1rem%;
+}
+
+}
+
