@@ -1,0 +1,63 @@
+
+/*------------------------------------*\
+   Clickable Dropdown
+\*------------------------------------*/
+
+.click-nav {
+	margin: auto;
+	width:100%;
+	text-align:center;
+	z-index: 1;
+	overflow:visible;
+}
+.click-nav ul {
+	font-weight:900;
+}
+.click-nav ul li {
+	position:relative;
+	list-style:none;
+	cursor:pointer;
+}
+.click-nav ul li ul {
+	position:absolute;
+	left:0;
+	right:0;
+}
+.click-nav ul .clicker {
+	background:#fff;
+	color:#333;
+	padding-top: 3em;
+}
+.click-nav ul .clicker:hover,
+.click-nav ul .active {
+	background:#F2F2F2;
+	color: #333;
+}
+.click-nav ul li a {
+	transition:background-color 0.2s ease-in-out;
+	-webkit-transition:background-color 0.2s ease-in-out;
+	-moz-transition:background-color 0.2s ease-in-out;
+	display:block;
+	padding:2em 10px 2em 10px;
+	background:#FFF;
+	color:#333;
+	text-decoration:none;
+	border-bottom: thin #ccc solid;
+}
+.click-nav ul li a:hover {
+	background:#eb5055;
+	color: #fff;
+}
+/* Fallbacks */
+.click-nav .no-js ul {
+	display:none;
+}
+.click-nav .no-js:hover ul {
+	display:block;
+}
+
+@media only screen and (min-width: 26em) {
+	.click-nav {
+		display: none;
+}
+}
