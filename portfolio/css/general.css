@@ -6,7 +6,6 @@
 
 
 body {
-	background-image:url(../images/bulb.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -159,7 +158,7 @@ margin-top: 1.5em;
 
 }
 
-/*
+
 nav {
 	width: 100%;
 	height: 5rem;
@@ -195,13 +194,6 @@ nav a {
 }
 
 */
-@media only screen and (min-width: 35em) {
-
-	.artwork li {
-		width: 20%;
-	}
-
-}
 
 
 /* ------------- Content */
@@ -229,9 +221,12 @@ nav a {
 }
 
 .qoute {
-	margin: 10rem 1rem 1rem 1rem;
-	font-family: Roboto Condensed, sans-serif, cursive; 
-	line-height: 1.8rem;
+	font-size: 3rem;
+	margin-top: 13rem;
+	margin-bottom: 1rem;
+	margin-left: 30%; 
+	margin-right: 15%;
+	line-height: 2.8rem;
 	color: #FFF;
 	text-transform: uppercase;
 }
@@ -374,10 +369,35 @@ h3 {
 
 /*------------ MEDIA */
 
-@media only screen and (min-width:30em) {
-	
 
-.qoute {
+.grid {
+	overflow: hidden;
+}
+
+.flex-img{
+	display: block;
+	width: 100%;
+}
+
+.unit { 
+float: left;
+}
+
+.unit-spacer{
+	padding: 1em;
+}
+
+/*start with small screens always*/
+/*start with max-width instead of min-width (this is specified for small screens only)*/
+ 
+@media only screen and (max-width:38em) {
+	
+	.unit-s-1{
+		float:none; /*to cancel the function of floating to left*/
+		width: 100%;
+	}
+	
+	.qoute {
 	font-size: 2rem;
 	margin-top: 13rem;
 	margin-bottom: 1rem;
@@ -387,16 +407,22 @@ h3 {
 	line-height: 2rem;
 }
 
-.socialmedia
-
-
 }
 
-@media only screen and (min-width:45em) {
+
+/*this media quiery below is only good for grids*/
+@media only screen and (min-width:38em) and (max-width:60em){
 	
-
-
-.qoute {
+	.unit-m-1{ /* this will be the same as unit-s-1 because its doing the same action*/
+		float:none;
+		width:100%;
+	}
+	
+	.unit-m-1-2{ /* change the width on this class to make the image get bigger on midum screen*/
+		width:50%;
+	}
+	
+	.qoute {
 	font-size: 3rem;
 	margin-top: 10rem;
 	margin-bottom: 1rem;
@@ -418,52 +444,24 @@ p {
 	font-size: 0.8rem;
 }
 
-
 }
 
-/*------------ Lede */
-
-
-@media only screen and (min-width: 20em) {
-
-	.lede{
-	font-size: 0.6rem%;
-}
-
-}
-
-
-
-@media only screen and (min-width: 45em) {
-
-	.lede {
-		font-size: 1.125rem;
+@media only screen and (min-width:60em){
+	.unit-l-1-3{
+		width:100%;
 	}
+	
+	
 
 }
 
 
-@media only screen and (min-width: 100em) {
 
-	.lede{
-	font-size: 150%;
-}
 
-}
 
-@media only screen and (min-width: 200em) {
 
-	.lede{
-	font-size: 1.125rem;
-}
 
-}
 
-@media only screen and (min-width: 250em) {
-
-	.lede{
-	font-size: 1rem%;
-}
-
-}
-
+	
+	
+	
