@@ -1,0 +1,106 @@
+@-moz-viewport{ width: device-width; scale:1;}
+@-ms-viewport{ width: device-width; scale:1;}
+@-o-viewport{ width: device-width; scale:1;} /* this will be out soon*/
+@-webkit-viewport{ width: device-width; scale:1;}
+@viewport{ width: device-width; scale:1;}
+
+
+/*  HEADER------------------------------------------------------------*/
+
+html {
+	background-image:url(../images/self-portrait.jpg);
+	background-repeat:no-repeat;
+	background-color:#000;
+	font: normal 100%/1.4  Helvetica, Arial, sans-serif;
+	padding: 0;
+	position:relative;
+	
+}
+
+
+/* LOGO/ H1------------------------------------------------------------*/
+
+h1 {
+	margin: 1em 0 1em 1em; 
+}
+
+.main-wrapper {
+
+	float: left;
+	
+	}
+
+
+/* Social Icons ------------------------------------------------------------*/
+
+
+.social-bar{
+margin-left: 30em;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+/* FOOTER ------------------------------------------------------------*/
+
+.footer_img {
+	padding-left: 2em;
+	margin-top: 1em;
+	height:44px;
+}
+.footer_img:hover {
+	opacity: .5;
+}
+
+
+@media only screen and (min-width: 48em){
+	footer {
+		float: left;
+		width: 67%;
+		margin-left:.5em;
+
+		display: inline-block;
+		height: 4em;
+		overflow:hidden;
+	
+	}
+}
+
+
+
+
+@media only screen and (min-width: 20em){
+	.main-wrapper{
+		width:80%;
+		padding-left:40px;
+	}
+}
+
+	
+@media only screen and (min-width:240px) {
+	
+	.logo{
+		width: 10%;
+}
+}
+
+@media only screen and (min-width: 48em) {
+	.main-wrapper{
+		width:40%;
+		padding-right:50%;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
